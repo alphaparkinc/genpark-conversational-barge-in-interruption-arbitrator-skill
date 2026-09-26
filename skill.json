@@ -1,0 +1,33 @@
+{
+  "name": "genpark-conversational-barge-in-interruption-arbitrator-skill",
+  "version": "1.0.0",
+  "description": "Full-duplex conversational barge-in arbitrator classifying user interruptions, backchannels, and acoustic echo with context rollback.",
+  "category": "Service",
+  "author": "AlphaPark",
+  "tags": [
+    "barge-in",
+    "voice-agent",
+    "full-duplex",
+    "interruption",
+    "echo-arbitration",
+    "mcp"
+  ],
+  "tools": [
+    {
+      "name": "evaluate_interruption_event",
+      "description": "Arbitrate whether an incoming speech event is a true barge-in, backchannel, or echo."
+    },
+    {
+      "name": "compute_playback_rollback_state",
+      "description": "Calculate exact token/character rollback for interrupted agent speech."
+    },
+    {
+      "name": "classify_utterance_intent",
+      "description": "Classify user speech snippet into confirmation vs intent redirect."
+    },
+    {
+      "name": "run_benchmark_barge_in_arbitration",
+      "description": "Run comprehensive barge-in test scenarios across echo, backchannel, and interruption."
+    }
+  ]
+}
